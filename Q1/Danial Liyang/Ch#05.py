@@ -70,3 +70,17 @@ for i in range(1,7,1):
 #       4 3 2 1
 #     5 4 3 2 1
 #   6 5 4 3 2 1
+
+# (Display prime numbers between 2 and 1,000) Modify Listing 5.13 to display all
+# the prime numbers between 2 and 1,000, inclusive. Display eight prime numbers
+# per line.
+def isPrime(i):
+    for j in range(2,(i//2)+1):
+        if i % j == 0:
+            return False
+    return True
+for i in range(2,1001):
+    if isPrime(i):
+        print(i,end=" ")
+
+# 2 3 5 7 11 13 17 19 23 29 31 
