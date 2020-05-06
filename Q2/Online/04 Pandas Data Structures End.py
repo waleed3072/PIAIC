@@ -321,3 +321,34 @@ frame.reindex(range(12),method='ffill')
 
 
 
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+import numpy as np
+import pandas as pd
+data_df = pd.DataFrame( np.arange(16).reshape((4,4)),
+                      index = ['Ohio','Colorado','Utah','New York'],
+                      columns=['One','Two','Three','Four'])
+# print(data_df,'\n')
+# df2 = data_df[['One','Three']]
+# print(df2)
+# print( data_df[2:] )
+print(data_df['One'])
+
+# Conditional Selection
+# print(data_df[data_df['Three']]>5)
+# print(data_df,'\n')
+
+# df2 = data_df[data_df['Three']]>5
+# print(df2)
+# print(data_df[data_df['Three']]>5)
+
+
+# In[ ]:
+
+
+
+
