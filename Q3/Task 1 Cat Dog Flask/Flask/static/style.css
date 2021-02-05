@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div {
+    display: flex;
+}
+
+.container{
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_container {
+    width: 100%;
+    max-width: 600px;
+    max-height: 80%;
+    background-color: lightblue;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose_img {
+    justify-content: center;
+}
+
+.sub_container div {
+    margin: 10px 0 ;
+    width: 93%;
+}
+
+img {
+    object-fit: cover;
+}
+
+.choose_file {
+    justify-content: center;
+}
+
+.choose_file * {
+    padding: 10px;
+}
+
+.result {
+    flex-direction: column;
+    align-items: center;
+}
+
+.result p {
+    font-size: 50px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.btn-submit {
+    padding: 10px;
+}

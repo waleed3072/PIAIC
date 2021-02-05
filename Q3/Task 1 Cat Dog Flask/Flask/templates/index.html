@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Cat vs Dog Classifier</title>
+</head>
+<body>
+<div class="container">
+    <div class="sub_container">
+		<div class="choose_img">
+			<figure>
+				<img src="{{ url_for('static', filename='sample_image.jpg') }}" alt="Choose Image" width="100%" height="100%" />
+			</figure>
+		</div>
+		<div class="choose_file">
+			<label for="choose_file">sample_image.png</label>
+			<button id="choose_file" class="btn">Choose File</button>
+		</div>
+		<div class="result">
+			<p>Dog</p>
+			<button class="btn btn-submit">Submit</button>
+		</div>
+    </div>
+</div>
+</body>
+</html>
