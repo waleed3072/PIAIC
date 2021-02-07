@@ -14,17 +14,24 @@
     <div class="sub_container">
 		<div class="choose_img">
 			<figure>
-				<img src="{{ url_for('static', filename='sample_image.jpg') }}"
-                     alt="Choose Image" width="100%" height="100%" />
+				<img src="{{ image_file }}"
+                     alt="Choose Image" width="300px" height="auto" />
 			</figure>
 		</div>
-		<div class="choose_file">
-			<label for="choose_file">sample_image.png</label>
-			<button id="choose_file" class="btn">Choose File</button>
-		</div>
+        <form class="form" method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="choose_file">
+                {{ form.picture() }}
+                    {% if form.picture.errors %}
+                        {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span></br>
+                        {% endfor %}
+                    {% endif %}
+		    </div>
+            {{ form.submit(class="btn btn-submit") }}
+        </form>
 		<div class="result">
-			<p>Dog</p>
-			<button class="btn btn-submit">Submit</button>
+			<p>{{ animal }}</p>
 		</div>
     </div>
 </div>

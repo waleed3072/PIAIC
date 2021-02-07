@@ -56,6 +56,7 @@ img {
 }
 
 .btn {
+    padding: 10px;
     border-radius: 10px;
     border: 0;
     font-size: 20px;
@@ -67,5 +68,13 @@ img {
 }
 
 .btn-submit {
-    padding: 10px;
+}
+
+.form {
+    text-align: center;
+}
+
+.text-danger {
+    color: red;
+    font-size: 20px;
 }
