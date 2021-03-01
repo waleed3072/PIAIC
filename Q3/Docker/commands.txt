@@ -1,0 +1,98 @@
+docker aamirpinger/helloworld
+docker --help
+docker pull aamirpinger/helloworld
+docker run -d -p 80:80 aamirpinger/helloworld
+docker run -it aamirpinger/helloworld
+docker run -it aamirpinger/helloworld sh
+docker container ls
+docker container ls -a
+docker pull aamirpinger/helloworld
+docker container ls -a
+docker run -it aamirpinger/helloworld sh
+docker container ls -a
+docker run -it aamirpinger/helloworld sh
+docker container ls -a
+cls
+docker ps
+docker ps -a
+docker exec aamirpinger/helloworld
+docker exec -it aamirpinger/helloworld sh
+docker ps -a
+docker exec -it funny_cohen sh
+docker ps -a
+docker container stop funny_cohen
+docker ps -a
+docker container rm funny_cohen
+docker ps -a
+docker container stop musing_gould
+docker ps -a
+docker container rm musing_gould
+docker ps -a
+docker container rm trusting_elgamal
+docker ps -a
+doskey /History
+cd C:\Users\walee\Google Drive\waleed3072\PIAIC\Q3\Docker
+doskey /History > commands.txt
+dir
+commands.txt
+docker run -d -p 80:80 docker/getting-started
+docker ps -a
+docker rm -f vibrant_sanderson
+docker ps -a
+docker run -d -p 80:80 beautiful_tharp
+docker start -d -p 80:80 beautiful_tharp
+docker start -p 80:80 beautiful_tharp
+docker start beautiful_tharp
+docker ps -a
+docker rm -f beautiful_tharp
+doskey /History > commands.txt
+cls
+dir
+cls
+docker build -t first-docker-app
+docker build -t first-docker-app .
+docker container ps -a
+docker container run --name=first-docker-cont -d -p 8500:80 first-docker-app
+docker container ps -a
+docker container stop first-docker-cont
+docker container ps -a
+prompt --help
+prompt $G
+prompt
+cd ..
+cd node-js-app
+prompt $g
+cls
+docker build -t second-docker-app .
+docker container run --name=second-docker-cont -d -p 8500:80 second-docker-app
+docker container stop second-docker-cont
+docker container ps -a
+docker container run --name=second-docker-cont -d -p 8000:8080 second-docker-app
+docker container run --name=second-docker-cont -d -p 8000:8080
+docker container run --name=second-docker-cont
+docker container run second-docker-cont
+docker container run second-docker-app
+docker container ps -a
+docker container rm second-docker-cont
+docker container rm dazzling_dubinsky
+docker container rm -f dazzling_dubinsky
+docker build -t second-docker-app .
+docker container run --name=second-docker-cont -d -p 8000:8080 second-docker-app
+docker container rm -f second-docker-cont
+docker container ps -a
+docker push first-docker-app
+docker push waleedbutt98/first-docker-app
+docker tag first-docker-app waleedbutt98/first-docker-app
+docker push waleedbutt98/first-docker-app
+docker ps-a
+docker ps -a
+docker container run first-docker-cont -d -p 5000:80 waleedbutt98/first-docker-app
+docker container run -d -p 5000:80 waleedbutt98/first-docker-app
+docker ps -a
+docker stop brave_volhard
+docker kill brave_volhard
+docker rm brave_volhard
+doskey /History > commands.txt
+prompt
+cd ..
+doskey /History >> commands.txt
