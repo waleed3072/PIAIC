@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cat vs Dog Classifier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+<div class="container">
+    <div class="sub_container">
+		<div class="choose_img">
+			<figure>
+				<img src="{{ image_file }}"
+                     alt="Choose Image" width="300px" height="auto" />
+			</figure>
+		</div>
+        <form class="form" method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="choose_file">
+                {{ form.picture() }}
+                    {% if form.picture.errors %}
+                        {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span></br>
+                        {% endfor %}
+                    {% endif %}
+		    </div>
+            {{ form.submit(class="btn btn-submit") }}
+        </form>
+		<div class="result">
+			<p>{{ animal }}</p>
+		</div>
+    </div>
+</div>
+</body>
+</html>
