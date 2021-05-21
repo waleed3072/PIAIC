@@ -8,7 +8,7 @@ h5py==2.10.0
 Keras==2.4.3
 Keras-Preprocessing==1.1.2
 numpy==1.19.5
-tensorflow==2.4.1
+tensorflow==2.5.0
 tensorflow-estimator==2.4.0
 WTForms==2.3.3
 pillow~=8.0.1
